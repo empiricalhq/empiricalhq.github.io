@@ -1,33 +1,55 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import ProjectCard from "./components/project-card";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+      <div className="container">
+        <div className="intro">
+          <h1>
+            At Pragmatic, we make software that works. We believe that software
+            should be reliable, efficient, and easy to use.
+          </h1>
+          <div style={{ marginTop: ".75rem" }}>
+            <a href="https://github.com/empiricalhq/" target="_blank">
+              GITHUB
+            </a>
+          </div>
+        </div>
+
+        <div className="projects">
+          <div>
+            <ProjectCard
+              color="blue"
+              icon="🥀"
+              title="Gaaaaa aaaaaaa"
+              appName="WhatsApp Bot"
+              year="2025"
+            />
+            <ProjectCard
+              color="white"
+              icon="🕊️"
+              title="A monorepo"
+              appName="Lima Limpia"
+              year="2025"
+            />
+            <ProjectCard
+              color="yellow"
+              icon="☠️"
+              title="A monorepo"
+              appName="Lima Limpia"
+              year="2025"
+            />
+            <ProjectCard
+              color="red"
+              icon="😭"
+              title="A simple app to download files"
+              appName="downloader"
+              year="2025"
+            />
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   );
 }
 
