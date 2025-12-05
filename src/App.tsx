@@ -1,4 +1,5 @@
 import ProjectCard from "./components/project-card";
+import SocialLink from "./components/social-link";
 
 function App() {
   return (
@@ -10,9 +11,9 @@ function App() {
             should be reliable, efficient, and easy to use.
           </h1>
           <div style={{ marginTop: ".75rem" }}>
-            <a href="https://github.com/empiricalhq/" target="_blank">
+            <SocialLink href="https://github.com/empiricalhq/">
               GITHUB
-            </a>
+            </SocialLink>
           </div>
         </div>
 
