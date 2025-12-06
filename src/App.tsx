@@ -10,9 +10,7 @@ function App() {
           should be reliable, efficient, and easy to use.
         </h1>
         <div style={{ marginTop: "1.15rem" }}>
-          <SocialLink href="https://github.com/empiricalhq/">
-            GITHUB
-          </SocialLink>
+          <SocialLink href="https://github.com/empiricalhq/">GITHUB</SocialLink>
         </div>
       </div>
 
