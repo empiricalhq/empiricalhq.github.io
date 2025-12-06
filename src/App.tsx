@@ -17,7 +17,7 @@ function App() {
           </div>
         </div>
 
-        <div className="projects">
+        <div className="projects-grid">
           <div>
             <ProjectCard
               color="blue"
