@@ -30,7 +30,7 @@
     padding: 2rem;
 
     .intro {
-        background-color: yellow;
+        margin: auto 0;
     }
 
     .projects-grid {
@@ -49,20 +49,20 @@
             transition: all 0.2s cubic-bezier(0.25, 0.45, 0.45, 0.94);
 
             .card-icon {
-                font-size: "3rem";
-                margin-bottom: "1rem";
+                font-size: 3rem;
+                margin-bottom: 1rem;
             }
 
             .card-title {
-                font-size: "1.5rem";
-                font-weight: "700";
-                margin-bottom: "1rem";
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
             }
 
             .card-meta {
-                margin-top: "auto";
+                margin-top: auto;
                 font-family: "IBM Plex Mono";
-                font-weight: "700";
+                font-weight: 700;
             }
         }
 
@@ -80,16 +80,18 @@ h1 {
 }
 
 .button {
-    display: "inline-block";
+    display: inline-block;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 700;
-    text-decoration: "none";
+    text-decoration: none;
     color: var(--color-black);
     background-color: var(--color-white);
 
     border: var(--border);
     box-shadow: var(--shadow-hover);
     padding: 0.75rem 1.25rem;
+    transition: all 0.1s ease;
+    transform: translate(0, 0);
 }
 
 .button:hover {
